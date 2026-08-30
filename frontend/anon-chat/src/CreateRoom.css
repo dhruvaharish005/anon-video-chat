@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+.create-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f1117;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.create-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background: #181b24;
+    border: 1px solid #292e3b;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.create-card h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.create-subtitle {
+    margin: 10px 0 32px;
+    color: #8f96a8;
+    text-align: center;
+    font-size: 15px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #dfe3ec;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #343a49;
+    border-radius: 10px;
+    outline: none;
+    background: #10131a;
+    color: #ffffff;
+    font-size: 15px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #656c7d;
+}
+
+.form-group input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.create-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+.create-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.create-button:active {
+    transform: translateY(0);
+}
+
+.join-link {
+    display: block;
+    margin-top: 22px;
+    color: #8b8ff7;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.join-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+
+    .create-card {
+        padding: 30px 22px;
+    }
+
+    .create-card h1 {
+        font-size: 27px;
+    }
+}
